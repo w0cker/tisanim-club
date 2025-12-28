@@ -1,0 +1,162 @@
+.user-profile .profile-sidebar {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  height: 100%;
+}
+
+.avatar-placeholder {
+  width: 100px;
+  height: 100px;
+  background-color: #e7f1ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #0d6efd;
+}
+
+.profile-sidebar .card-title {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.profile-sidebar .text-muted {
+  color: #6c757d !important;
+  font-size: 0.9rem;
+}
+
+.profile-sidebar .btn {
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  text-align: right;
+  transition: all 0.3s ease;
+}
+
+.profile-sidebar .btn:hover {
+  transform: translateX(-5px);
+}
+
+.profile-sidebar .btn-outline-danger:hover {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+
+/* Main content */
+.user-profile .card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.user-profile .card-title {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+/* Form styles in profile */
+.user-profile .form-control {
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.user-profile .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.user-profile .form-control-plaintext {
+  padding: 0.75rem;
+  color: #495057;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.user-profile .form-label {
+  font-weight: 500;
+  color: #495057;
+  margin-bottom: 0.5rem;
+}
+
+/* Table styles */
+.user-profile .table {
+  margin-bottom: 0;
+}
+
+.user-profile .table thead th {
+  border-bottom: 2px solid #dee2e6;
+  color: #495057;
+  font-weight: 600;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+.user-profile .table tbody td {
+  padding: 1rem;
+  vertical-align: middle;
+  border-color: #dee2e6;
+}
+
+.user-profile .table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.user-profile .badge {
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+/* Button styles */
+.user-profile .btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* Empty state */
+.text-center .display-4 {
+  font-size: 4rem;
+  color: #6c757d;
+  opacity: 0.3;
+  margin-bottom: 1rem;
+}
+
+.text-center h5 {
+  color: #495057;
+  margin-bottom: 0.5rem;
+}
+
+.text-center .text-muted {
+  color: #6c757d !important;
+  margin-bottom: 1.5rem;
+}
+
+/* Edit mode buttons */
+.user-profile .btn-outline-primary {
+  border: 2px solid #0d6efd;
+  color: #0d6efd;
+  transition: all 0.3s ease;
+}
+
+.user-profile .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.user-profile .btn-outline-secondary {
+  border: 2px solid #6c757d;
+  color: #6c757d;
+}
+
+.user-profile .btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+}

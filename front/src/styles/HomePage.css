@@ -1,0 +1,71 @@
+.hero-section {
+  background: linear-gradient(135deg, #0d6efd 0%, #894ceb 100%);
+  padding: 4rem 0;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 3rem;
+}
+
+.hero-section h1 {
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.category-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.category-card .display-4 {
+    color:bisque;
+  font-size: 3.5rem;
+}
+
+.featured-products .card {
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.featured-products .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.featured-products .card-title {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.featured-products .card-text {
+  color: #4d4c4c;
+  font-size: 0.9rem;
+}
+
+.courses .card {
+  border: none;
+  border-radius: 12px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.courses .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.courses .card-title {
+  color: #333;
+  font-weight: 600;
+}
+
+.courses .card-text {
+  color: #4a4a4a;
+  margin-bottom: 1.5rem;
+}
