@@ -27,7 +27,7 @@ const exchangeRoute = require('./routes/exchangeRoute.js');
 const orderRoute = require('./routes/orderRoute.js');
 const contentRoute = require('./routes/contentRoute.js');
 
-const cors = require('cors')
+// const cors = require('cors')
 
 // הגדרת CORS מקיפה
 // app.use(cors({
