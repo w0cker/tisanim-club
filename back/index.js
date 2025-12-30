@@ -2,6 +2,19 @@ const express = require('express')
 const app = express()
 const connectDB = require('./db/connect');
 require('dotenv').config()
+const cors = require('cors');
+
+
+const corsOptions = {
+  // Replace with your exact frontend URL
+  origin: 'https://tisanim-club-1.onrender.com', 
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true // Set to true if you are sending cookies or headers
+};
+
+app.use(cors(corsOptions));
+
 
 // ייבוא המודולים
 const usersRoute = require('./routes/usersRoute.js');
@@ -17,12 +30,12 @@ const contentRoute = require('./routes/contentRoute.js');
 const cors = require('cors')
 
 // הגדרת CORS מקיפה
-app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5000'],
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
+// app.use(cors({
+//   origin: ['http://localhost:3000', 'http://localhost:5000'],
+//   credentials: true,
+//   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+//   allowedHeaders: ['Content-Type', 'Authorization']
+// }));
 
 app.use(express.json());
 
