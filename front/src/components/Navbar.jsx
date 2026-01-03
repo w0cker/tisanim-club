@@ -146,6 +146,12 @@ const Navbar = () => {
                         פרופיל אישי
                       </Link>
                     </li>
+                    <li>
+                      <Link className="dropdown-item" to="/admin">
+                        <i className="bi bi-person me-2"></i>
+                        לוח בקרה מנהל
+                      </Link>
+                    </li>
               
                     <li><hr className="dropdown-divider" /></li>
                     <li>
