@@ -60,7 +60,7 @@ const HomePage = () => {
       {/* Hero Section */}
       <section className="hero-section text-center py-5 bg-primary text-white">
         <div className="container">
-          <h1 className="display-4 mb-3">ברוכים הבאים למועדון טיסנים</h1>
+          <h1 >ברוכים הבאים למועדון טיסנים</h1>
           <p className="lead mb-4">
             הפלטפורמה המובילה לחובבי טיסנאות בישראל
           </p>
