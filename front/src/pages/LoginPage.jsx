@@ -69,9 +69,6 @@ setTimeout(() => {
                   </div>
                   <h2 className="auth-title">כניסה לחשבון</h2>
                   <p className="text-muted">התחבר כדי לגשת לחשבון שלך</p>
-                  <p className="text-muted small">
-                    למטרות הדגמה: demo@example.com / demo123
-                  </p>
                 </div>
 
                 {error && (
