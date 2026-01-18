@@ -101,25 +101,7 @@ const Navbar = () => {
             </div>
           </form>
 
-          {/* כפתורי ניווט */}
-          <div className="navbar-nav mx-auto flex-row flex-wrap justify-content-center">
-            {navItems.map((item) => (
-              <NavLink 
-                key={item.path}
-                className={({ isActive }) => 
-                  `nav-link mx-1 my-1 btn btn-nav ${isActive ? 'btn-nav-active' : 'btn-nav-inactive'}`
-                } 
-                to={item.path}
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  setShowSearch(false);
-                }}
-              >
-                <i className={`bi ${item.icon} me-1`}></i>
-                <span className="nav-text">{item.label}</span>
-              </NavLink>
-            ))}
-          </div>
+         
 
           {/* כפתורי משתמש */}
           <div className="navbar-nav ms-lg-3">
@@ -153,14 +135,14 @@ const Navbar = () => {
                       </Link>
                     </li>
               
-                    <li><hr className="dropdown-divider" /></li>
+                    {/* <li><hr className="dropdown-divider" /></li> */}
                     <li>
                       <button className="dropdown-item text-danger" onClick={handleLogout}>
                         <i className="bi bi-box-arrow-right me-2"></i>
                         התנתק
                       </button>
                     </li>
-                  </ul>
+                  </ul><br />
                 </div>
               </div>
             ) : (
@@ -183,6 +165,25 @@ const Navbar = () => {
                 </Link>
               </div>
             )}
+          </div>
+           {/* כפתורי ניווט */}
+          <div className="navbar-nav mx-auto flex-row flex-wrap justify-content-center">
+            {navItems.map((item) => (
+              <NavLink 
+                key={item.path}
+                className={({ isActive }) => 
+                  `nav-link mx-1 my-1 btn btn-nav ${isActive ? 'btn-nav-active' : 'btn-nav-inactive'}`
+                } 
+                to={item.path}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  setShowSearch(false);
+                }}
+              >
+                <i className={`bi ${item.icon} me-1`}></i>
+                <span className="nav-text">{item.label}</span>
+              </NavLink>
+            ))}
           </div>
         </div>
 
